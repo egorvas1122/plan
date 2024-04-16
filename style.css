@@ -41,6 +41,7 @@ section{
     padding-left: 30px;
     background-repeat: no-repeat;
     background-size: contain;
+    z-index: 2;
 }
 .main-title{
     color: #2B2D35;
@@ -74,3 +75,208 @@ section{
 .button:hover{
     background: red;
 }
+.planet{
+    background:url(img/planet.png);
+    background-repeat: no-repeat;
+    transform: rotate(-176deg);
+    position: absolute;
+    right: 20px;
+    width:405px; 
+    height:330px; 
+    z-index: 1;
+}
+.title{
+    padding-top: 100px;
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow: 5px black;
+}
+.about-content{
+    width: 35%;
+    height: 270px;
+    padding-top: 40px;
+    padding-left: 40px;
+    background-color: #792AFF;
+    position: relative;
+    display: flex;
+}
+.about-title{
+    color: #FFF;
+    font-size: 20px;
+    max-width: 463px;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa';
+}
+.about-card{
+    background:url(img/form2.png);
+    background-repeat: no-repeat;
+    width: 376px;
+    height: 346px;
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-card p{
+    color: #000;
+    font-size: 17px;
+    align-self: start;
+    padding-left: 20px;
+    line-height: 25px;
+    font-family: 'Comfortaa';
+}
+.about-card img{
+    padding-bottom: 20px;
+}
+.moving-planet{
+    background:url(img/moving-planet.png) ;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+@keyframes planet-move{
+    from{transform: translateY(0px);}
+    to{transform: translateY(70px);}
+}
+.moving-planet,.moving-cloud,.moving-planet2{
+    animation-name: planet-move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.moving-cloud{
+    background: url(img/cloud.png);
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 162px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 10;
+}
+.skill-card{
+    background: url(img/form3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:auto ;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    margin-top: 100px;
+    padding-left: 10px;
+}
+.skill-card p{
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 500px;
+    font-family: 'Comfortaa';
+}
+.moving-planet2{
+    background: url(img/moving-planet2.png);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 200px;
+    position: absolute;
+    bottom: 70px;
+    left: 0px;
+}
+.comments-block{
+    max-height: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comments-card{
+    background: url(img/card.png);
+    height: 300px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.comments-card h3{
+    font-family: 'Comfortaa';
+    font-size: 18px;
+    padding:10px 10px 10px 10px;
+}
+.comments-card p{
+    font-family: 'Comfortaa';
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.comment{
+    background: url(img/comment.png);
+    width: 327px;
+    height: 161px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comment p{
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    max-width: 250px;
+}
+.works-block{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.works-block img{
+    width: 30%;
+}
+footer{
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#FFF;
+}
+.footer-info p{
+    font-family: 'Comfortaa';
+    padding-bottom: 10px;
+}
+.footer-year p{
+    font-family: 'Comfortaa';
+    letter-spacing: 1.5px;
+}
+.footer-links{
+    margin-right: 15px;
+}
+/* .work1{
+    position: relative;
+    right: 20px;
+}
+.work2{
+   position: relative;
+   right: 10px;
+}
+.work3{
+    position: relative;
+    right: 2px;
+} */
